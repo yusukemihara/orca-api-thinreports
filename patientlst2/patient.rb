@@ -37,14 +37,14 @@ opt = {
   :pass => "5e403a3bbd63e0f98d53befadabaeee76c8ecf3fcd701a80cb0ac9959f9b142b"
 }
 
-opt = {
-  :host => "localhost",
-  :port => 8000,
-  :path => "/api01rv2/patientgetv2?id=00001",
-  :ssl  => false,
-  :user => "ormaster",
-  :pass => "ormaster"
-}
+#opt = {
+#  :host => "localhost",
+#  :port => 8000,
+#  :path => "/api01rv2/patientlst2v2?class=01",
+#  :ssl  => false,
+#  :user => "ormaster",
+#  :pass => "ormaster"
+#}
 
 data = <<EOF
 <data>
