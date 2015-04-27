@@ -75,12 +75,17 @@ report = ThinReports::Report.create do
 
   start_new_page layout: :cover
 
-  attrs = %w|Patient_ID WholeName WholeName_inKana BirthDate Sex CreateDate UpdateDate TestPatient_Flag|
+  attrs = %w|Patient_ID WholeName WholeName_inKana BirthDate CreateDate UpdateDate TestPatient_Flag|
   patient_info.each do |p|
     start_new_page do |page|
       attrs.each do |a|
         page.item(a.intern).value(p[a])
       end
+      if p['Sex'] == '1'
+        page.item(:Sex).value('男')
+      else
+        page.item(:Sex).value('女')
+      end 
     end
   end
 
