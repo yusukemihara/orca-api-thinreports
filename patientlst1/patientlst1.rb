@@ -29,12 +29,12 @@ end
 # APIで患者情報取得
 
 opt = {
-  :host => "sms.orca-ng.org",
+  :host => "sms",
   :port => 9201,
   :path => "/api01rv2/patientlst1v2?class=01",
   :ssl  => true,
-  :user => "api_mihara3",
-  :pass => "5e403a3bbd63e0f98d53befadabaeee76c8ecf3fcd701a80cb0ac9959f9b142b"
+  :user => "apiuser",
+  :pass => "password"
 }
 
 #opt = {
@@ -91,4 +91,4 @@ report = ThinReports::Report.create do
 
   start_new_page layout: 'endcover.tlf'
 end
-report.generate :filename => 'patientlst1.pdf'
+report.generate :filename => 'patientlst1.png'

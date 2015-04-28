@@ -29,12 +29,12 @@ end
 # APIで患者情報取得
 
 opt = {
-  :host => "sms.orca-ng.org",
+  :host => "sms",
   :port => 9201,
   :path => "/api01rv2/patientgetv2?id=00001",
   :ssl  => true,
-  :user => "api_mihara3",
-  :pass => "5e403a3bbd63e0f98d53befadabaeee76c8ecf3fcd701a80cb0ac9959f9b142b"
+  :user => "apiuser",
+  :pass => "password"
 }
 
 #opt = {
